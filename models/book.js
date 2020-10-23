@@ -7,6 +7,10 @@ const bookSchema = new Schema({
   description: { type: String, required: true },
   image: { type: String, required: true },
   link: { type: String, required: true },
+  publishedDate: { type: String },
+  rating: { type: Number },
+  categories: {type: Array },
+  pageCount: { type: Number },
   date: { type: Date, default: Date.now }
 });
 

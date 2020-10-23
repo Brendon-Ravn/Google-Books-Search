@@ -1,7 +1,7 @@
 import React from "react";
-import API from "../../utils/API";
+import API from "../utils/API";
 
-function Saved(prop) {
+function Savedcard(prop) {
   let props = prop.data;
   console.log(props.link);
   function deleteCard(id) {
@@ -16,7 +16,7 @@ function Saved(prop) {
   return (
     <div className="card">
       <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
+        <h2 className="card-title">{props.title}</h2>
         <p className="card-text">Authors: {props.authors}</p>
         <a type="button" href={props.link} target="_blank" className="btn btn-primary">View</a>
         <button className="btn btn-primary" id={props._id} onClick={() => deleteCard(props._id)}>Delete</button>
@@ -40,4 +40,4 @@ function Saved(prop) {
   )
 }
 
-export default Saved;
+export default Savedcard;

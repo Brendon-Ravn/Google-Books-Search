@@ -1,5 +1,5 @@
 import React from "react";
-import API from "../../utils/API";
+import API from "../utils/API";
 
 function Card(prop) {
   let props = prop.data;
@@ -32,15 +32,15 @@ function Card(prop) {
   return (
     <div className="card">
       <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">Authors: {props.authors}</p>
-        <a type="button" href={props.previewLink} target="_blank" className="btn btn-primary">View</a>
-        <button className="btn btn-primary" onClick={() => addCard()}>Add</button>
+        <h2 className="card-title">{props.title}</h2>
+        <h4 className="card-text">Authors: {props.authors}</h4>
         <div className="container">
           <div className="row">
             <div className="col-md-3">
               <img src={image} className="card-img-left" alt="..." />
               <br />
+              <a type="button" href={props.previewLink} target="_blank" rel="noopener noreferrer" className="btn btn-dark">View</a>
+              <button className="btn btn-success" onClick={() => addCard()}>Add</button>
             </div>
             <div className="col-md-8">
               <p className="card-text">Description: {props.description}</p>
