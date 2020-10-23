@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from "../Navbar.js";
-import Jumbotron from "../Jumbotron.js";
-import Container from "../Container.js"
-import Card from "../Card"
-import API from "../../utils/API";
+import Navbar from "../components/Navbar";
+import Jumbotron from "../components/Jumbotron";
+import Container from "../components/Container"
+import Card from "../components/Card"
+import API from "../utils/API";
 
 const Search = () => {
   const [books, setBooks] = useState([]);

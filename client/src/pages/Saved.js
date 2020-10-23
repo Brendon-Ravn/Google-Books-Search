@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from "../Navbar.js";
-import Jumbotron from "../Jumbotron.js";
-import Container from "../Container.js"
-import SavedCard from "../Savedcard.js";
-import API from "../../utils/API";
+import Navbar from "../components/Navbar";
+import Jumbotron from "../components/Jumbotron";
+import Container from "../components/Container"
+import SavedCard from "../components/Savedcard";
+import API from "../utils/API";
 
 function Saved() {
   const [savedBooks, setSavedBooks] = useState([]);
