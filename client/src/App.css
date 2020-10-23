@@ -8,7 +8,11 @@
   border-color: tan !important;
 }
 
-.search, .saved{
+.search{
+  background-color: black !important;
+}
+
+.saved {
   background-color: black !important;
 }
 
