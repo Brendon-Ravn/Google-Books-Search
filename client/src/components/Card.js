@@ -41,7 +41,7 @@ function Card(prop) {
               <img src={image} className="card-img-left" alt={props.title} />
               <br />
               <a type="button" href={props.previewLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">View</a>
-              <button className="btn btn-success" onClick={() => {addCard(); ('alert').show();} }>Add</button>
+              <button className="btn btn-success" onClick={() => addCard()}>Add</button>
             </div>
             <br />
             <div className="col-lg-auto">
