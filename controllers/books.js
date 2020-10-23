@@ -23,13 +23,6 @@ module.exports = {
         console.error(error);
     });
   },
-  update: function(req, res) {
-    db.Book.findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then(dbModel => res.json(dbModel))
-      .catch((error) => {
-        console.error(error);
-    });
-  },
   remove: function(req, res) {
     db.Book.findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())

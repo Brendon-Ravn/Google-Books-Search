@@ -7,14 +7,14 @@ import "./App.css";
 function App() {
   return (
     <Router>
-        <div>
-          <Switch>
+      <div>
+        <Switch>
           <Route exact path={process.env.PUBLIC_URL + "/"} component={Search} />
           <Route exact path={process.env.PUBLIC_URL + "/saved"} component={Saved} />
           <Route path={process.env.PUBLIC_URL + "*"} component={Search} />
           </Switch>
-        </div>
-      </Router>
+      </div>
+    </Router>
   );
 }
 

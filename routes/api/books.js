@@ -7,7 +7,6 @@ router.route("/")
 
 router.route("/:id")
   .get(books.findById)
-  .put(books.update)
   .delete(books.remove);
 
 module.exports = router;

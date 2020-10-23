@@ -1,5 +1,6 @@
 import React from "react";
 import API from "../utils/API";
+import Book150 from "../images/book150.png"
 
 function Card(prop) {
   let props = prop.data;
@@ -9,7 +10,7 @@ function Card(prop) {
     image = props.imageLinks.thumbnail
   }
   else {
-    image = "#"
+    image = Book150
   }
 
   let card = {
@@ -32,21 +33,26 @@ function Card(prop) {
   return (
     <div className="card">
       <div className="card-body">
-        <h2 className="card-title">{props.title}</h2>
-        <h4 className="card-text">Authors: {props.authors}</h4>
+        <h2 className="card-title row">{props.title}</h2>
+        <h4 className="card-text row">Authors: {props.authors}</h4>
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
-              <img src={image} className="card-img-left" alt="..." />
+            <div className="col-lg-4">
+              <img src={image} className="card-img-left" alt={props.title} />
               <br />
               <a type="button" href={props.previewLink} target="_blank" rel="noopener noreferrer" className="btn btn-dark">View</a>
               <button className="btn btn-success" onClick={() => addCard()}>Add</button>
             </div>
-            <div className="col-md-8">
+            <br />
+            <div className="col-lg-8">
               <p className="card-text">Description: {props.description}</p>
+              <br />
               <p className="card-text">Pages: {props.pageCount}</p>
+              <br />
               <p className="card-text">Rating: {props.averageRating}</p>
+              <br />
               <p className="card-text">Published: {props.publishedDate}</p>
+              <br />
               <p className="card-text">Category: {props.categories}</p>
             </div>
           </div>
