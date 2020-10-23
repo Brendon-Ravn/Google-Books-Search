@@ -49,11 +49,11 @@ function Card(prop) {
               <br />
               <p className="card-text">Pages: {props.pageCount}</p>
               <br />
-              <p className="card-text">Rating: {props.averageRating}</p>
-              <br />
               <p className="card-text">Published: {props.publishedDate}</p>
               <br />
               <p className="card-text">Category: {props.categories}</p>
+              <br />
+              <p className="card-text">Rating: {props.averageRating}</p>
             </div>
           </div>
         </div>

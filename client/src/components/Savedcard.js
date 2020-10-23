@@ -30,11 +30,11 @@ function Savedcard(prop) {
               <br />
               <p className="card-text">Pages: {props.pageCount}</p>
               <br />
-              <p className="card-text">Rating: {props.rating}</p>
-              <br />
               <p className="card-text">Published: {props.publishedDate}</p>
               <br />
               <p className="card-text">Category: {props.categories}</p>
+              <br />
+              <p className="card-text">Rating: {props.rating}</p>
             </div>
           </div>
         </div>
