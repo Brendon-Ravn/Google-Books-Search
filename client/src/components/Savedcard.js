@@ -21,7 +21,7 @@ function Savedcard(prop) {
             <div className="col-lg-3">
               <img src={props.image} className="card-img-left" alt={props.title} />
               <br />
-              <a type="button" href={props.link} target="_blank" rel="noopener noreferrer" className="btn btn-dark">View</a>
+              <a type="button" href={props.link} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">View</a>
               <button className="btn btn-danger" id={props._id} onClick={() => deleteIt(props._id)}>Delete</button>
               <br />
             </div>

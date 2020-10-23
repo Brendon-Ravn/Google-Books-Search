@@ -7,6 +7,7 @@ function Navbar() {
         <li className="nav-item active">
           <a className="nav-link" href="/">Search</a>
         </li>
+        <p>  |  </p>
         <li className="nav-item">
           <a className="nav-link" href="/saved">Saved</a>
         </li>

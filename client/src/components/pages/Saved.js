@@ -20,7 +20,7 @@ function Saved() {
   }
 
   return (
-    <div className="Saved">
+    <div className="saved">
       <Navbar />
       <Container>
         <Jumbotron />

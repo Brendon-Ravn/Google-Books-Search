@@ -27,16 +27,17 @@ const Search = () => {
   }
 
   return (
-    <div className="Search">
+    <div className="search">
       <Navbar />
       <Container>
         <Jumbotron />
       </Container>
       <Container>
-        <form onSubmit={handleSubmit}>
-          <input className="form-control form-control-lg" type="search" placeholder="Search Books" onChange={(e) => setSearchObject(e.target.value)} />
+        <form className="col-lg-8" onSubmit={handleSubmit}>
+          <input className="form-control form-control-lg" type="search" placeholder="Search For Books Here" onChange={(e) => setSearchObject(e.target.value)} />
         </form>
       </Container>
+      <br />
       <Container>
         {books.map(book => {
           return (
