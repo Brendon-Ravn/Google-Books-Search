@@ -33,7 +33,6 @@ function Saved(prop) {
               <p className="card-text">Published: {props.publishedDate}</p>
               <p className="card-text">Category: {props.categories}</p>
             </div>
-
           </div>
         </div>
       </div>
